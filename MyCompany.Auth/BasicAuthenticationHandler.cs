@@ -31,7 +31,6 @@ namespace MyCompany.Auth
                 var username = credentials[0];
                 var password = credentials[1];
 
-                // ✅ Replace this with your real validation (DB, API, config etc.)
                 if (username == "admin" && password == "password")
                 {
                     var claims = new[] { new Claim(ClaimTypes.Name, username) };
